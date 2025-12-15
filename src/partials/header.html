@@ -1,3 +1,31 @@
-<header class="header">
-  <div class="container"></div>
-</header>
+<section class="hero">
+  <header class="header">
+    <div class="container">
+      <!-- Логотип -->
+    <img src="../img/лого.svg" alt="">
+
+      <!-- Кнопка-бургер (сниппет g-burger) -->
+      <button class="btn-reset burger"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              data-burger>
+        <span class="burger__line"></span>
+      </button>
+
+      <!-- Навигация (обязательно с data-menu) -->
+      <nav class="header__nav" data-menu>
+        <ul class="header__list">
+          <li><a href="#about" class="header__link" data-menu-item>О нас</a></li>
+          <li><a href="#main" class="header__link" data-menu-item>Стоимость</a></li>
+          <li><a href="#services" class="header__link" data-menu-item>Услуги</a></li>
+          <li><a href="#contacts" class="header__link" data-menu-item>Контакты</a></li>
+          <li><a href="#contacts" class="header__link" data-menu-item>Команда</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1 class="hero__title">WAWE</h1>
+    <p class="hero__subtitle">Школа серфинга на канарских Островах</p>
+  </div>
+</section>

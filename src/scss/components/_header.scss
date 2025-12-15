@@ -1,1 +1,95 @@
-// ваш код
+.header {
+    height: 70px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    @include small-tablet {
+      justify-content: space-between;
+    }
+  }
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &__list {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Open Sans";
+    @include small-tablet{
+      flex-direction: column;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.2s;
+    border-bottom: 1px solid #00b2a000;
+    &:hover {
+      border-bottom: 1px solid #00B2A0;
+    }
+  }
+  &__nav {
+    margin-left: 120px;
+    @include small-tablet {
+      position: fixed;
+      top: 120px;
+      right: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: calc(100vh - 70px);
+      background: #0D302C;
+      transition: right 0.4s ease;
+      // box-shadow: -2px 0 10px rgb(255, 255, 255);
+
+      &.menu--active {
+        right: 0;
+      }
+
+      .header__list {
+        flex-direction: columc;
+        padding: 2rem 1rem;
+      }
+    }
+  }
+
+  .burger {
+    @include burger;
+    display: none;
+
+    @include small-tablet {
+      display: block;
+    }
+  }
+
+}
+
+.hero {
+  background-image: url("../img/hero__bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 35px;
+  &__title {
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 20px;
+    font-size: 180px;
+    color: #0D302C;
+    @include mobile {
+      font-size: 140px;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    padding-bottom: 400px;
+    font-size: 24px;
+    font-family: "Open Sans";
+  }
+}
