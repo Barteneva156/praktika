@@ -1,0 +1,55 @@
+.bid{
+  text-align: center;
+  padding-bottom: 400px;
+  &__title{
+    font-size: 48px;
+    text-align: center;
+    font-weight: normal;
+    background-image: url("../img/svg/title_line.svg");
+    background-size: 48px 85px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 60px;
+    padding-left: 60px;
+    display: inline-block;
+    color: #01353E;
+  }
+  &__form {
+    display: flex;
+    max-width: 569px;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__input {
+    border: none;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 18px;
+    color: #00B2A0;
+    padding-top: 18px;
+  }
+  &__textarea {
+    min-height: 156px;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    color: #00B2A0;
+  }
+  &__button{
+    background: none;
+    width: 350px;
+    height: 70px;
+    border: 1px solid #DADADA;
+    margin: 0 auto;
+    &:hover {
+      background-color: #00B2A0;
+      color: #fff;
+      cursor: pointer;
+    }
+    transition: background-color 0.3s ease,color 0.3s ease;
+    text-transform: uppercase;
+
+  }
+}
+
+
